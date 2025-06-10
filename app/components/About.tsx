@@ -4,6 +4,7 @@ import { Josefin_Sans } from "next/font/google";
 const josefin = Josefin_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
+  preload: true,
 });
 
 const About = () => {
