@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import SplitType from "split-type";
 
-const lobster = Lobster({ weight: "400" });
+const lobster = Lobster({ weight: "400", subsets: ["latin"], preload: true });
 
 type LeftPanelProps = {
   activeSection: string;
