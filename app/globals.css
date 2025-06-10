@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* New Color Scheme */
+  --background-start-rgb: 10, 38, 35;
+  --background-end-rgb: 10, 38, 35;
+  --foreground-rgb: 255, 252, 225;
+  --primary-rgb: 255, 252, 225;
+  --secondary-rgb: 180, 178, 189;
+}
+
+body {
+  font-family: "Mori", sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background-end-rgb));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--secondary-rgb));
+  border-radius: 10px;
+  border: 2px solid rgb(var(--background-end-rgb));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--foreground-rgb));
+}
